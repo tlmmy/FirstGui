@@ -9,12 +9,12 @@ package lab;
  *
  * @author trogers8
  */
-public class FahrenheitToCelcius extends javax.swing.JFrame {
+public class FahrenheitToCelciusConverterGui extends javax.swing.JFrame {
 
     /**
      * Creates new form FahrenheitToCelcius
      */
-    public FahrenheitToCelcius() {
+    public FahrenheitToCelciusConverterGui() {
         initComponents();
     }
 
@@ -105,9 +105,9 @@ public class FahrenheitToCelcius extends javax.swing.JFrame {
 
     private void btnConvertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConvertActionPerformed
         // TODO add your handling code here:
-        int degreesFahrenheit = Integer.parseInt(txtTemp.getText());
-        int degreesCelcius = (int)(degreesFahrenheit - 32)*5/9;
-        lblDegrees.setText("" + degreesCelcius);
+        int degrees = Integer.parseInt(txtTemp.getText());
+        int convertedDegrees = (int)(degrees - 32)*5/9;
+        lblDegrees.setText("" + convertedDegrees);
         
     }//GEN-LAST:event_btnConvertActionPerformed
 
